@@ -1,4 +1,4 @@
-SCRIPTS=~/work/tools/scripts
+SCRIPTS=~/work/dotfiles/scripts
 
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
