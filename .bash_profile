@@ -17,7 +17,14 @@ shopt -s histappend
 
 export MYSQL_DIR='/usr/local/var/mysql'
 
-export EDITOR="mate -w"
+if [ -f /usr/local/bin/mate ]
+then
+	export EDITOR="mate -w"
+else
+	export EDITOR=vim
+fi
+
+
 export CLICOLOR=1
 
 alias pyg='/usr/local/bin/pygmentize'
