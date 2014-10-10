@@ -24,7 +24,7 @@ else
 	export EDITOR=vim
 fi
 
-
+export GREP_OPTIONS="--color"
 export CLICOLOR=1
 
 alias pyg='/usr/local/bin/pygmentize'
