@@ -1,7 +1,16 @@
 SCRIPTS=~/work/dotfiles/scripts
 
+source $SCRIPTS/git-completion.bash
+source $SCRIPTS/git-prompt.sh
+
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
+
+
+# Colors
+TXTGREEN='\e[0;32m' # Green
+TXTBLACK='\e[0;30m' # Black
+TXTRESET='\e[0m' #Text reset
 
 PATH=$PATH:$SCRIPTS:/usr/local/share/npm/bin
 export PATH
@@ -9,7 +18,7 @@ export PATH=/usr/local/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export PS1="\W\$ "
+export PS1="\W\[$TXTGREEN\]\$[__git_ps1]\[$TXTRESET\]\$ "
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
@@ -43,4 +52,4 @@ alias topmem="top -o mem -s 10"
 alias server="python -m SimpleHTTPServer 8000"
 
 
-source $SCRIPTS/git-completion.bash
+
