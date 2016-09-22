@@ -3,7 +3,7 @@
 if [ -z "$1" ]; then
   echo "usage: $0  [ Preferences |  ]"
 else
-  base=~/Library/Application\ Support/iPhone\ Simulator/
+  base=~/Library/Developer/CoreSimulator/
   apps=Applications
   app=`ls -1td "$base/"*"/$apps/"*"/$1.app" | head -1`
   if [ -n "$app" ]; then
