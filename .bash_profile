@@ -1,6 +1,7 @@
 SCRIPTS=~/work/dotfiles/scripts
 
 source $SCRIPTS/git-completion.bash
+source $SCRIPTS/rake-completion.sh
 source $SCRIPTS/git-prompt.sh
 
 bind '"\e[A":history-search-backward'
