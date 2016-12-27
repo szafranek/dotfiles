@@ -45,7 +45,12 @@ alias restart_sound="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'
 alias dns_flush="sudo killall -HUP mDNSResponder"
 alias itunes="lsof | grep iTunes | grep TCP | grep ESTABLISHED" # show who listens to my iTunes library
 
-alias ll="ls -lahLT"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	alias ll="ls -lahLT"
+else
+	alias ll="ls -lahL"
+fi
+
 alias ..="cd .."
 alias ...="cd ../.."
 
