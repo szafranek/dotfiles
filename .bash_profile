@@ -1,4 +1,4 @@
-SCRIPTS=~/work/dotfiles/scripts
+SCRIPTS=$HOME/work/dotfiles/scripts
 
 source $SCRIPTS/git-completion.bash
 source $SCRIPTS/rake-completion.sh
