@@ -21,6 +21,7 @@ export LC_ALL=en_US.UTF-8
 
 export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
 
+export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
