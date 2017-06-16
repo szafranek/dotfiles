@@ -19,7 +19,14 @@ export PATH=/usr/local/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
+# Use colors only in interactive mode.
+# This way the file can be safely loaded by non-interactive shells.
+if [[ $- == i ]]
+then
+	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
+else
+	export PS1="\W\$(__git_ps1)\$ "
+fi
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL=erasedups
@@ -28,9 +35,9 @@ shopt -s histappend
 
 export MYSQL_DIR='/usr/local/var/mysql'
 
-if [ -f /usr/local/bin/mate ]
+if [ -f /usr/local/bin/sublime ]
 then
-	export EDITOR="mate -w"
+	export EDITOR="sublime -w"
 else
 	export EDITOR=vim
 fi
