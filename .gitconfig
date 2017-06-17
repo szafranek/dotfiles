@@ -1,0 +1,20 @@
+[user]
+	name = Krzysztof Szafranek
+	email = ebraun@o2.pl
+[mergetool]
+	keepBackup = true
+[color]
+	ui = true
+[push]
+	default = simple
+[http]
+	postBuffer = 5242880
+[pull]
+	rebase = true
+[alias]
+    a = add
+    co = checkout
+    c = commit
+    cam = commit -am
+    cav = commit -av
+    s = status
