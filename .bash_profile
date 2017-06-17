@@ -8,24 +8,21 @@ bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
 
-# Colors
-TXTGREEN='\e[0;32m' # Green
-TXTBLACK='\e[0;30m' # Black
-TXTRESET='\e[0m' #Text reset
-
 PATH=$PATH:$SCRIPTS:/usr/local/share/npm/bin
 export PATH
 export PATH=/usr/local/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# Use colors only in interactive mode.
-# This way the file can be safely loaded by non-interactive shells.
-if [[ $- == i ]]
+
+if [[ "$TERM" == "dumb" ]]
 then
-	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
-else
 	export PS1="\W\$(__git_ps1)\$ "
+else
+	# Colors
+	TXTGREEN='\e[0;32m' # Green
+	TXTRESET='\e[0m' #Text reset
+	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
 fi
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -53,7 +50,8 @@ alias restart_sound="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'
 alias dns_flush="sudo killall -HUP mDNSResponder"
 alias itunes="lsof | grep iTunes | grep TCP | grep ESTABLISHED" # show who listens to my iTunes library
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if [[ "$OSTYPE" == "darwin"* ]]
+then
 	alias ll="ls -lahLT"
 else
 	alias ll="ls -lahL"
