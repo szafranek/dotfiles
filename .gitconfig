@@ -12,9 +12,10 @@
 [pull]
 	rebase = true
 [alias]
-    a = add
-    co = checkout
-    c = commit
-    cam = commit -am
-    cav = commit -av
-    st = status
+	a = add
+	co = checkout
+	c = commit
+	cam = commit -am
+	cav = commit -av
+	cv = commit -v
+	st = status
