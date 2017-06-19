@@ -17,4 +17,4 @@
     c = commit
     cam = commit -am
     cav = commit -av
-    s = status
+    st = status
