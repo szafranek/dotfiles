@@ -19,3 +19,4 @@
 	cav = commit -av
 	cv = commit -v
 	st = status
+	pf = push --force-with-lease
