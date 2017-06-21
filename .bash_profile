@@ -32,12 +32,7 @@ shopt -s histappend
 
 export MYSQL_DIR='/usr/local/var/mysql'
 
-if [ -f /usr/local/bin/sublime ]
-then
-	export EDITOR="sublime -w"
-else
-	export EDITOR=vim
-fi
+export EDITOR=vim
 
 export GREP_OPTIONS="--color"
 export CLICOLOR=1
