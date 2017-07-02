@@ -15,4 +15,3 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 " Package configuration
-map <C-n> :NERDTreeToggle<CR>
