@@ -9,3 +9,5 @@ set autoindent			" Auto indentation
 set scrolloff=5			" Scroll offset from the cursor
 set shell=bash\ --login		" source .bash_profile
 set paste			" Preserve indentation when pasting from another app
+execute pathogen#infect()
+call pathogen#helptags()

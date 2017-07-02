@@ -8,7 +8,7 @@ bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
 
-PATH=$PATH:$SCRIPTS:/usr/local/share/npm/bin
+PATH=$PATH:$SCRIPTS:~/.vimpkg/bin
 export PATH
 export PATH=/usr/local/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
