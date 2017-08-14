@@ -22,3 +22,5 @@
 	pf = push --force-with-lease
 	branch-name = "!git symbolic-ref --short HEAD"
 	publish = "!git push -u origin $(git branch-name)"
+	delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
