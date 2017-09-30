@@ -37,7 +37,7 @@ export EDITOR=vim
 export GREP_OPTIONS="--color"
 export CLICOLOR=1
 
-alias pyg='/usr/local/bin/pygmentize'
+alias p='/usr/local/bin/pygmentize'
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
 
