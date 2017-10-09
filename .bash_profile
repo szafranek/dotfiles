@@ -38,6 +38,7 @@ export GREP_OPTIONS="--color"
 export CLICOLOR=1
 
 alias p='/usr/local/bin/pygmentize'
+alias pe=pipenv
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
 
@@ -56,8 +57,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 alias topmem="top -o mem -s 10"
-
 alias server="python -m SimpleHTTPServer 8000"
+
 
 
 
