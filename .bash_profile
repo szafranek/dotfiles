@@ -34,7 +34,7 @@ export MYSQL_DIR='/usr/local/var/mysql'
 
 export EDITOR=vim
 
-export GREP_OPTIONS="--color"
+alias grep="grep --color=auto"
 export CLICOLOR=1
 
 alias p='/usr/local/bin/pygmentize'
