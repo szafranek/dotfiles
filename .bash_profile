@@ -7,35 +7,32 @@ source $SCRIPTS/git-prompt.sh
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
-
-PATH=$PATH:$SCRIPTS:~/.vimpkg/bin
-export PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$SCRIPTS:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export HISTTIMEFORMAT="%d/%m/%y %T "
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+export EDITOR=vim
+export CLICOLOR=1
 
+export MYSQL_DIR='/usr/local/var/mysql'
+
+shopt -s histappend
 
 if [[ "$TERM" == "dumb" ]]
 then
 	export PS1="\W\$(__git_ps1)\$ "
 else
-	# Colors
 	TXTGREEN='\e[0;32m' # Green
 	TXTRESET='\e[0m' #Text reset
 	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
 fi
 
-export HISTTIMEFORMAT="%d/%m/%y %T "
-export HISTCONTROL=erasedups
-export HISTSIZE=10000
-shopt -s histappend
-
-export MYSQL_DIR='/usr/local/var/mysql'
-
-export EDITOR=vim
 
 alias grep="grep --color=auto"
-export CLICOLOR=1
+alias ..="cd .."
+alias ...="cd ../.."
 
 alias p='/usr/local/bin/pygmentize'
 alias pe=pipenv
@@ -52,9 +49,6 @@ then
 else
 	alias ll="ls -lahL"
 fi
-
-alias ..="cd .."
-alias ...="cd ../.."
 
 alias topmem="top -o mem -s 10"
 alias server="python -m SimpleHTTPServer 8000"
