@@ -11,8 +11,3 @@ set shell=bash\ --login		" source .bash_profile
 set paste			" Preserve indentation when pasting from another app
 set number			" Show line numbers
 
-" apt-vim
-execute pathogen#infect()
-call pathogen#helptags()
-
-" Package configuration
