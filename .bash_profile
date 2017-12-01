@@ -36,6 +36,7 @@ alias ...="cd ../.."
 
 alias p='/usr/local/bin/pygmentize'
 alias pe=pipenv
+alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
 
