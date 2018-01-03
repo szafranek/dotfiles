@@ -1,10 +1,13 @@
 {
+  "styles": {
+    "notes": "redBright"
+  },
   "aliases": [
     {
       "name": "week",
       "description": "Display current tasks for this week from Calendar",
-      "command": "lsp",
-      "args": "(completed:today or (status:incomplete and dueWithin:\"1 week of today\") and list:Calendar"
+      "command": "lsd",
+      "args": "(completed:today or status:incomplete) and (dueWithin:\"1 week of today\" or dueBefore:today) and list:Calendar"
     },
     {
       "name": "now",
