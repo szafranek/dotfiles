@@ -1,0 +1,16 @@
+{
+  "aliases": [
+    {
+      "name": "week",
+      "description": "Display current tasks for this week from Calendar",
+      "command": "lsp",
+      "args": "(completed:today or (status:incomplete and dueWithin:\"1 week of today\") and list:Calendar"
+    },
+    {
+      "name": "now",
+      "description": "Display today's tasks from Calendar",
+      "command": "lsp",
+      "args": "list:Calendar and ((not priority:none and status:incomplete) or completed:today or (dueBefore:tomorrow and status:incomplete))"
+    }
+  ]
+}
