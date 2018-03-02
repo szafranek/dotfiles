@@ -26,3 +26,6 @@
 	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	sync = "!git fetch origin master && git rebase origin/master"
 	branch-pp = for-each-ref --sort=committerdate refs/remotes/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+[diff-so-fancy]
+	stripLeadingSymbols = false
+	markEmptyLines = false
