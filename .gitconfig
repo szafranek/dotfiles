@@ -29,3 +29,8 @@
 [diff-so-fancy]
 	stripLeadingSymbols = false
 	markEmptyLines = false
+[color "diff-highlight"]
+	oldNormal = 9 bold
+	oldHighlight = white bold 9
+	newNormal = 28 bold
+	newHighlight = white bold 28
