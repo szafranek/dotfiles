@@ -1,6 +1,6 @@
 SCRIPTS=$HOME/work/dotfiles/scripts
 
-source $SCRIPTS/git-completion.bash
+source $SCRIPTS/git-completion.sh
 source $SCRIPTS/make-completion.sh
 source $SCRIPTS/rake-completion.sh
 source $SCRIPTS/git-prompt.sh
