@@ -475,9 +475,9 @@
 				<key>0xf702-0x240000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>[5D</string>
+					<string>0x01</string>
 				</dict>
 				<key>0xf702-0x260000</key>
 				<dict>
@@ -503,9 +503,9 @@
 				<key>0xf703-0x240000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>[5C</string>
+					<string>0x05</string>
 				</dict>
 				<key>0xf703-0x260000</key>
 				<dict>
@@ -1362,6 +1362,8 @@
 			<string>/Users/cszafranek</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1424,7 +1426,7 @@
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000000000001</real>
+	<real>0.18015324519230769</real>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>UseModernScrollWheelAccumulator</key>
