@@ -17,6 +17,9 @@ export HISTSIZE=10000
 export EDITOR=vim
 export CLICOLOR=1
 
+export BAT_THEME="Monokai Extended Light"
+export BAT_STYLE=numbers,changes
+
 export MYSQL_DIR='/usr/local/var/mysql'
 
 shopt -s histappend
