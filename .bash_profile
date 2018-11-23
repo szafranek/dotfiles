@@ -20,6 +20,9 @@ export CLICOLOR=1
 export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
 
+# brew pyenv fix for Mojave
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+
 export MYSQL_DIR='/usr/local/var/mysql'
 
 shopt -s histappend
