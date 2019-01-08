@@ -21,7 +21,8 @@ export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
 
 # brew pyenv fix for Mojave
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+CFLAGS="-I$(brew --prefix openssl)/include"
+LDFLAGS="-L$(brew --prefix openssl)/lib"
 
 export MYSQL_DIR='/usr/local/var/mysql'
 
