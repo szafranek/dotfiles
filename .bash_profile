@@ -1,4 +1,7 @@
-SCRIPTS=./scripts
+if [ -z "$SCRIPTS" ]
+then
+	SCRIPTS=$HOME/work/dotfiles/scripts
+fi
 
 source $SCRIPTS/git-completion.sh
 source $SCRIPTS/make-completion.sh
