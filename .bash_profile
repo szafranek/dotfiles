@@ -1,3 +1,4 @@
+# $SCRIPTS can be exported before this script
 if [ -z "$SCRIPTS" ]
 then
 	SCRIPTS=$HOME/work/dotfiles/scripts
@@ -34,16 +35,14 @@ export MYSQL_DIR='/usr/local/var/mysql'
 
 shopt -s histappend
 
-if [ -x "$(command -v __git_ps1)" ]
+
+if [[ "$TERM" == "dumb" ]]
 then
-	if [[ "$TERM" == "dumb" ]]
-	then
-		export PS1="\W\$(__git_ps1)\$ "
-	else
-		TXTGREEN='\e[0;32m' # Green
-		TXTRESET='\e[0m' #Text reset
-		export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
-	fi
+	export PS1="\W\$(__git_ps1)\$ "
+else
+	TXTGREEN='\e[0;32m' # Green
+	TXTRESET='\e[0m' #Text reset
+	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
 fi
 
 alias grep="grep --color=auto"
