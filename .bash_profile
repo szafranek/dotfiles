@@ -1,4 +1,4 @@
-SCRIPTS=$HOME/work/dotfiles/scripts
+SCRIPTS=./scripts
 
 source $SCRIPTS/git-completion.sh
 source $SCRIPTS/make-completion.sh
@@ -21,22 +21,27 @@ export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
 
 # brew pyenv fix for Mojave
-CFLAGS="-I$(brew --prefix openssl)/include"
-LDFLAGS="-L$(brew --prefix openssl)/lib"
+if [ -x "$(command -v brew)" ]
+then
+	CFLAGS="-I$(brew --prefix openssl)/include"
+	LDFLAGS="-L$(brew --prefix openssl)/lib"
+fi
 
 export MYSQL_DIR='/usr/local/var/mysql'
 
 shopt -s histappend
 
-if [[ "$TERM" == "dumb" ]]
+if [ -x "$(command -v __git_ps1)" ]
 then
-	export PS1="\W\$(__git_ps1)\$ "
-else
-	TXTGREEN='\e[0;32m' # Green
-	TXTRESET='\e[0m' #Text reset
-	export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
+	if [[ "$TERM" == "dumb" ]]
+	then
+		export PS1="\W\$(__git_ps1)\$ "
+	else
+		TXTGREEN='\e[0;32m' # Green
+		TXTRESET='\e[0m' #Text reset
+		export PS1="\W\[$TXTGREEN\]\$(__git_ps1)\[$TXTRESET\]\$ "
+	fi
 fi
-
 
 alias grep="grep --color=auto"
 alias ..="cd .."
