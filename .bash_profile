@@ -28,12 +28,6 @@ export BAT_STYLE=numbers,changes
 
 shopt -s histappend
 
-# brew pyenv fix for Mojave
-fix_brew() {
-	export CFLAGS=-I$(brew --prefix)/opt/icu4c/include
-	export LDFLAGS=-L$(brew --prefix)/opt/icu4c/lib
-}
-
 if [[ "$TERM" == "dumb" ]]
 then
 	export PS1="\W\$(__git_ps1)\$ "
@@ -74,5 +68,22 @@ alias topmem="top -o mem -s 10"
 alias server="python -m http.server 8000"
 
 
+# brew pyenv fix for Mojave
+fix_brew() {
+    export CFLAGS=-I$(brew --prefix)/opt/icu4c/include
+    export LDFLAGS=-L$(brew --prefix)/opt/icu4c/lib
+}
+
+# cd into the folder open in Finder
+cdf () {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]
+    then
+            cd "$target"
+            pwd
+    else
+            echo 'No Finder window found' >&2
+    fi
+}
 
 
