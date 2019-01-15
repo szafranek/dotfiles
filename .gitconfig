@@ -12,6 +12,7 @@
 [pull]
 	rebase = true
 [alias]
+	alias = config --get-regexp ^alias
 	a = add
 	am = commit --amend --no-edit
 	b = branch
