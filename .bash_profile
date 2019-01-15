@@ -87,3 +87,8 @@ cdf () {
 }
 
 
+ # make directory and enter it
+mdc() {
+    mkdir -p "$@" && cd "$@"
+}
+
