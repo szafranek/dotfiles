@@ -22,7 +22,7 @@
 	cav = commit -av
 	cv = commit -v
 	d = diff
-	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%an%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M:%S'"
+	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
 	st = status
 	pf = push --force-with-lease
 	branch-name = "!git symbolic-ref --short HEAD"
