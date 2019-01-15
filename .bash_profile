@@ -65,7 +65,7 @@ else
 fi
 
 alias topmem="top -o mem -s 10"
-alias server="python -m SimpleHTTPServer 8000"
+alias server="python -m http.server 8000"
 
 
 
