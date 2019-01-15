@@ -46,6 +46,7 @@ fi
 alias grep="grep --color=auto"
 alias ..="cd .."
 alias ...="cd ../.."
+alias cls="clear && ll"
 
 alias gs="git status"
 alias gd="git diff"
