@@ -47,6 +47,12 @@ alias grep="grep --color=auto"
 alias ..="cd .."
 alias ...="cd ../.."
 
+alias gs="git status"
+alias gd="git diff"
+
+alias dot="cd ~/work/dotfiles"
+alias work="cd ~/work"
+
 alias pe=pipenv
 alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'

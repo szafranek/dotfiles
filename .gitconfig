@@ -13,6 +13,7 @@
 	rebase = true
 [alias]
 	a = add
+	am = commit --amend --no-edit
 	b = branch
 	co = checkout
 	c = commit
@@ -20,6 +21,8 @@
 	cam = commit -am
 	cav = commit -av
 	cv = commit -v
+	d = diff
+	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%an%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M:%S'"
 	st = status
 	pf = push --force-with-lease
 	branch-name = "!git symbolic-ref --short HEAD"
