@@ -21,21 +21,18 @@ export HISTSIZE=10000
 export EDITOR=vim
 export CLICOLOR=1
 
+export MYSQL_DIR='/usr/local/var/mysql'
+
 export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
 
-# brew pyenv fix for Mojave
-if [ -x "$(command -v brew)" ]
-then
-	OPENSSL_PREFIX=$(brew --prefix openssl)
-	export CFLAGS="-I$OPENSSL_PREFIX/include"
-	export LDFLAGS="-L$OPENSSL_PREFIX/lib"
-fi
-
-export MYSQL_DIR='/usr/local/var/mysql'
-
 shopt -s histappend
 
+# brew pyenv fix for Mojave
+fix_brew() {
+	export CFLAGS=-I$(brew --prefix)/opt/icu4c/include
+	export LDFLAGS=-L$(brew --prefix)/opt/icu4c/lib
+}
 
 if [[ "$TERM" == "dumb" ]]
 then
