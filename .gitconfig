@@ -14,7 +14,7 @@
 [alias]
 	alias = config --get-regexp ^alias
 	a = add
-	am = commit --amend --no-edit
+	amne = commit --amend --no-edit
 	b = branch
 	co = checkout
 	c = commit
@@ -24,7 +24,7 @@
 	cv = commit -v
 	d = diff
 	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
-	st = status
+	s = status
 	pf = push --force-with-lease
 	branch-name = "!git symbolic-ref --short HEAD"
 	publish = "!git push -u origin $(git branch-name)"
