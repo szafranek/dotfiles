@@ -1,4 +1,9 @@
 #!/bin/tcsh
+
+# Show all the processes than have $1 their name, e.g.:
+# psc Xcode
+# https://furbo.org/2014/09/03/the-terminal/
+
 set cmd = 'ps axo pid,ppid,user,command'
 if ("$1" == "") then
   $cmd
