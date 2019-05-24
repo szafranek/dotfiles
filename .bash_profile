@@ -69,6 +69,15 @@ alias topmem="top -o mem -s 10"
 alias server="python -m http.server 8000"
 
 
+# Go development
+export GOPATH="${HOME}/work/go"
+if [[ -d "$GOPATH" ]] && [[ -x "$(command -v brew)" ]]; then
+    export GOROOT="$(brew --prefix golang)/libexec"
+    export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+fi
+
+
+
 # brew pyenv fix for Mojave
 fix_brew() {
     export CFLAGS=-I$(brew --prefix)/opt/icu4c/include
@@ -92,4 +101,3 @@ cdf () {
 mdc() {
     mkdir -p "$@" && cd "$@"
 }
-
