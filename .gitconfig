@@ -11,6 +11,8 @@
 	postBuffer = 5242880
 [pull]
 	rebase = true
+[rebase]
+        autosquash = true
 [alias]
 	alias = config --get-regexp ^alias
 	a = add
