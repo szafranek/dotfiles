@@ -4,6 +4,10 @@ then
 	SCRIPTS=$HOME/work/dotfiles/scripts
 fi
 
+source $SCRIPTS/git-prompt.zsh
+source $SCRIPTS/zsh-syntax-highlighting.zsh
+source $SCRIPTS/colored-man-pages.plugin.zsh
+
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
@@ -30,8 +34,6 @@ export MYSQL_DIR='/usr/local/var/mysql'
 export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
 
-
-source $SCRIPTS/git-prompt.zsh
 
 export PROMPT='%C $(gitprompt)%# '
 
