@@ -12,6 +12,35 @@ source $SCRIPTS/colored-man-pages.plugin.zsh
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
+bindkey \^U backward-kill-line
+
+# Alt+Backspace
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+}
+zle -N backward-kill-dir
+bindkey '^[^?' backward-kill-dir
+
+
+# Alt+Left
+backward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-word
+}
+zle -N backward-word-dir
+bindkey "^[[1;9C" forward-word-dir
+
+# Alt+Right
+forward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle forward-word
+}
+zle -N forward-word-dir
+bindkey "^[[1;9D" backward-word-dir
+
+
+
 export PATH=/usr/local/bin:$SCRIPTS:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
