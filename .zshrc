@@ -106,6 +106,11 @@ if [[ -d "$GOPATH" ]] && [[ -x "$(command -v brew)" ]]; then
 fi
 
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+
 
 # brew pyenv fix for Mojave
 fix_brew() {
