@@ -100,8 +100,8 @@ alias server="python -m http.server 8000"
 
 # Go development
 export GOPATH="${HOME}/work/go"
-if [[ -d "$GOPATH" ]] && [[ -x "$(command -v brew)" ]]; then
-    export GOROOT="$(brew --prefix golang)/libexec"
+if [[ -d "$GOPATH" ]]; then
+    export GOROOT="/usr/local/opt/go/libexec"
     export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 fi
 
