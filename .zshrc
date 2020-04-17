@@ -79,6 +79,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias cls="clear && ll"
 
+alias g="git"
 alias gd="git diff"
 alias gl="git l"
 alias gs="git status"
