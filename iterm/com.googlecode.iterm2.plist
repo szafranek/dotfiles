@@ -4,6 +4,8 @@
 <dict>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -471,7 +473,7 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>520 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>370 205 700 603 277 900 1920 1080 </string>
+	<string>370 205 700 603 -1495 900 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>546 1103 606 469 277 900 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
@@ -479,7 +481,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>937 1340 592 584 277 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1643 1263 1130 707 -1643 900 1920 1080 </string>
+	<string>76 947 1738 1393 -442 900 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1643 900 1920 1080 -1643 900 1920 1080 </string>
 	<key>New Bookmarks</key>
@@ -2041,11 +2043,14 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.0</string>
+		<string>3.3.8</string>
+		<string>3.3.2</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
+		<string>3.3.7</string>
+		<string>3.3.9</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
+		<string>3.3.0</string>
 		<string>3.3.4</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
@@ -2053,9 +2058,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-1643, 900}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-1005, 1762}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2066,7 +2071,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>556190143.97650301</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>22</integer>
+	<integer>36</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2809,24 +2814,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>bloom_filter_creation_notebook_job</string>
-		<string>personal</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>adidas</string>
-		<string>adidad</string>
-		<string>polo</string>
-		<string>damen</string>
-		<string>chris Sza</string>
-		<string>Krzysztof</string>
-		<string>test</string>
-		<string>nestor</string>
-		<string>qwert</string>
-		<string>dmitry</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>555430132.54817295</real>
 	<key>NoSyncTipsDisabled</key>
@@ -2840,6 +2827,8 @@
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
+	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PerPaneBackgroundImage</key>
 	<true/>
@@ -2878,6 +2867,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/cszafranek/work/dotfiles/iterm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>ProportionalScrollWheelReporting</key>
@@ -2891,9 +2882,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-22T12:30:35Z</date>
+	<date>2020-04-08T08:16:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2015071990</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
@@ -10573,7 +10566,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
