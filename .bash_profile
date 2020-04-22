@@ -51,6 +51,7 @@ alias dot="cd ~/work/dotfiles"
 alias work="cd ~/work"
 
 alias pe=pipenv
+alias poe=poetry
 alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
