@@ -8,6 +8,8 @@ source $SCRIPTS/git-prompt.zsh
 source $SCRIPTS/zsh-syntax-highlighting.zsh
 source $SCRIPTS/colored-man-pages.plugin.zsh
 
+zstyle ':completion:*:*:git:*' script $SCRIPTS/git-completion.sh
+autoload -Uz compinit && compinit
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
