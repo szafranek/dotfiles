@@ -12,7 +12,7 @@
 [pull]
 	rebase = true
 [rebase]
-        autosquash = true
+  autosquash = true
 [alias]
 	alias = config --get-regexp ^alias
 	a = add
@@ -34,6 +34,8 @@
 	branch-pp = for-each-ref --sort=committerdate refs/remotes/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+	colorMoved = true
 [diff-so-fancy]
 	stripLeadingSymbols = false
 	markEmptyLines = false
