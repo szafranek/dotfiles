@@ -86,7 +86,7 @@ alias gd="git diff"
 alias gl="git l"
 alias gs="git status"
 
-alias dot="cd ~/work/dotfiles"
+alias dotfiles="cd ~/work/dotfiles"
 alias work="cd ~/work"
 
 alias pe=pipenv
