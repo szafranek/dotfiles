@@ -62,7 +62,7 @@ setopt INC_APPEND_HISTORY        # Write to the history file immediately, not wh
 setopt SHARE_HISTORY             # Share history between all sessions.
 setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
-setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
+
 
 export EDITOR=vim
 export CLICOLOR=1
