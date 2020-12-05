@@ -71,6 +71,7 @@ export MYSQL_DIR='/usr/local/var/mysql'
 
 export BAT_THEME="Monokai Extended Light"
 export BAT_STYLE=numbers,changes
+export BAT_PAGER=""
 
 
 export PROMPT='%C $(gitprompt)%# '
