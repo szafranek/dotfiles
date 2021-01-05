@@ -147,3 +147,10 @@ cdf () {
 mdc() {
     mkdir -p "$@" && cd "$@"
 }
+
+# git clone and enter the new directory
+gclone() {
+    repo="$1"
+    directory=$(echo $repo | awk -F/ '{print $NF}' | sed s/.git//)
+    git clone $repo && cd $directory
+}
