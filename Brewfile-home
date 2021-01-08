@@ -7,6 +7,7 @@ brew "ffmpeg"
 brew "httpd"
 brew "mysql"
 brew "php", link: false
+brew youtube-dl
 cask "anki"
 cask "beamer"
 cask "iexplorer"
