@@ -25,11 +25,12 @@
 	cam = commit -am
 	d = diff
 	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
+	p = pull
+	pf = push --force-with-lease
+	publish = "!git push -u origin $(git branch-name)"
 	s = status
 	st = status
-	pf = push --force-with-lease
 	branch-name = "!git symbolic-ref --short HEAD"
-	publish = "!git push -u origin $(git branch-name)"
 	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	sync = "!git fetch origin master && git rebase origin/master"
 	branch-pp = for-each-ref --sort=committerdate refs/remotes/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'

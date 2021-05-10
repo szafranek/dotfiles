@@ -85,6 +85,7 @@ alias cls="clear && ll"
 alias g="git"
 alias gd="git diff"
 alias gl="git l"
+alias gp="git p"
 alias gs="git status"
 
 alias dotfiles="cd ~/work/dotfiles"
