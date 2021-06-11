@@ -9,11 +9,8 @@ brew "mysql"
 brew "php", link: false
 brew youtube-dl
 cask "anki"
-cask "beamer"
-cask "iexplorer"
-cask "igetter"
 cask "kaleidoscope"
 cask "kindle"
 cask "skype"
 cask "soundflower"
-cask "xee"
+cask "vox"
