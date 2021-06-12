@@ -111,14 +111,6 @@ alias topmem="top -o mem -s 10"
 alias server="python -m http.server 8000"
 
 
-# Go development
-export GOPATH="${HOME}/work/go"
-if [[ -d "$GOPATH" ]]; then
-    export GOROOT="/usr/local/opt/go/libexec"
-    export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-fi
-
-
 export PYENV_ROOT="$HOME/.pyenv"
 if [[ -d "$PYENV_ROOT" ]]; then
     export PATH="$PYENV_ROOT/bin:$PATH"
