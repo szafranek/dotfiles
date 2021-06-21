@@ -50,6 +50,12 @@ bindkey "^[[1;9D" backward-word-dir
 ZLE_REMOVE_SUFFIX_CHARS=""
 
 
+# fzf configuration
+export FZF_DEFAULT_COMMAND="fd . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
+
+
 export PATH=/usr/local/bin:$SCRIPTS:$PATH
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
