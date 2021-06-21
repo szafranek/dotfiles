@@ -51,6 +51,7 @@ ZLE_REMOVE_SUFFIX_CHARS=""
 
 
 # fzf configuration
+export FZF_DEFAULT_OPTS='--height 40%  --multi'
 export FZF_DEFAULT_COMMAND="fd -H . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -H -t d . $HOME"
@@ -156,4 +157,8 @@ gclone() {
     repo="$1"
     directory=$(echo $repo | awk -F/ '{print $NF}' | sed s/.git//)
     git clone $repo && cd $directory
+}
+
+idea() {
+    open -a "IntelliJ IDEA.app" --args "$@"
 }
