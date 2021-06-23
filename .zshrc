@@ -146,7 +146,6 @@ cdf () {
     fi
 }
 
-
  # make directory and enter it
 mdc() {
     mkdir -p "$@" && cd "$@"
