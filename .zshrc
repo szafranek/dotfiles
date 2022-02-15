@@ -132,6 +132,10 @@ mdc() {
     mkdir -p "$@" && cd "$@"
 }
 
+kill-by-port() {
+    kill "$(lsof -t -i :$1)"
+}
+
 # git clone and enter the new directory
 gclone() {
     repo="$1"
