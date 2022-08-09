@@ -100,6 +100,7 @@ alias work="cd ~/work"
 
 alias pe=pipenv
 alias poe=poetry
+alias vpython="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'" # ipython inside a virtualenv
 alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
