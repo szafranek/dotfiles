@@ -18,7 +18,7 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-
+# Clear line with Ctrl+U
 bindkey \^U backward-kill-line
 
 # Alt+Backspace
@@ -46,7 +46,7 @@ forward-word-dir () {
 zle -N forward-word-dir
 bindkey "^[[1;9D" backward-word-dir
 
-
+# Don't remove spaces from completion
 ZLE_REMOVE_SUFFIX_CHARS=""
 
 
