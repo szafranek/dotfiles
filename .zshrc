@@ -71,7 +71,6 @@ setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 
 # make bash `help` command work in zsh
-unalias run-help
 autoload run-help
 HELPDIR=/usr/share/zsh/"${ZSH_VERSION}"/help
 alias help=run-help
