@@ -7,7 +7,7 @@ brew "ffmpeg"
 brew "httpd"
 brew "mysql"
 brew "php", link: false
-brew youtube-dl
+brew yt-dlp
 cask "anki"
 cask "kaleidoscope"
 cask "kindle"
