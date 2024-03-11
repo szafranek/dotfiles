@@ -15,16 +15,19 @@
 [rebase]
   autosquash = true
 [alias]
-	alias = config --get-regexp ^alias
 	a = add
+	alias = config --get-regexp ^alias
 	amne = commit --amend --no-edit
 	b = branch
+	branch-name = "!git symbolic-ref --short HEAD"
+	branch-pp = for-each-ref --sort=committerdate refs/remotes/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	c = commit
+	cam = commit -am
+	cm = commit -m
 	co = checkout
 	cob = checkout -b
-	c = commit
-	cm = commit -m
-	cam = commit -am
 	d = diff
+	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
 	p = pull
 	pf = push --force-with-lease
@@ -33,10 +36,7 @@
 	ri = rebase --interactive
 	s = status
 	st = status
-	branch-name = "!git symbolic-ref --short HEAD"
-	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	sync = "!git fetch origin master && git rebase origin/master"
-	branch-pp = for-each-ref --sort=committerdate refs/remotes/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
