@@ -28,6 +28,7 @@
 	cob = checkout -b
 	cp = cherry-pick
 	d = diff
+	dt = difftool
 	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
 	p = pull
@@ -42,6 +43,13 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
 	colorMoved = true
+	tool = difftastic
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+	difftool = true
 [diff-so-fancy]
 	stripLeadingSymbols = false
 	markEmptyLines = false
