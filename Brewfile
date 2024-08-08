@@ -21,6 +21,7 @@ brew "nvm"
 brew "pyenv"
 brew "ripgrep"
 brew "tldr"
+brew "tokei"
 brew "tree"
 brew "yt-dlp"
 
