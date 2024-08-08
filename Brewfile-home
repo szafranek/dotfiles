@@ -3,14 +3,10 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-brew "ffmpeg"
-brew "httpd"
+
 brew "mysql"
-brew "php", link: false
-brew yt-dlp
+brew "php"
 cask "anki"
-cask "kaleidoscope"
 cask "kindle"
-cask "skype"
 cask "soundflower"
 cask "vox"
