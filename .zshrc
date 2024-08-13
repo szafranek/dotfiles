@@ -148,6 +148,10 @@ kill-by-port() {
     kill "$(lsof -t -i :$1)"
 }
 
+ports() {
+    sudo lsof -iTCP -sTCP:LISTEN -n -P | awk 'NR>1 { print $9,$2 }' | sed 's/.*://' | while read port pid; do echo "$port\t$(ps -p $pid -o command= | sed 's/^-//')\t$pid"; done | sort -un
+}
+
 # git clone and enter the new directory
 gclone() {
     repo="$1"
