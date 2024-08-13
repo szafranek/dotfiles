@@ -4,6 +4,7 @@ then
 	SCRIPTS=$HOME/work/dotfiles/scripts
 fi
 
+export PATH="$SCRIPTS/bin:$PATH"
 source $SCRIPTS/git-prompt.zsh
 source $SCRIPTS/zsh-syntax-highlighting.zsh
 source $SCRIPTS/colored-man-pages.plugin.zsh
