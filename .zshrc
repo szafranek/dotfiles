@@ -116,6 +116,7 @@ alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
 
+alias night="nightlight toggle"
 alias restart_sound="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'`"
 alias dns_flush="sudo killall -HUP mDNSResponder"
 
