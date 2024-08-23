@@ -44,7 +44,7 @@
 	colorMoved = true
 [diff-so-fancy]
 	stripLeadingSymbols = true
-	markEmptyLines = false
+	markEmptyLines = true
 [color "diff-highlight"]
 	oldNormal = 9 bold
 	oldHighlight = white bold 9
