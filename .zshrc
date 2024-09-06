@@ -59,6 +59,7 @@ export FZF_DEFAULT_COMMAND="fd -H . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -H -t d . $HOME"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH=/usr/local/bin:$SCRIPTS:$PATH
 export LC_CTYPE=en_US.UTF-8
@@ -97,8 +98,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias cls="clear && ll"
 
-alias dt=difft
-
 alias g="git"
 alias gd="git diff"
 alias gl="git l"
@@ -111,6 +110,8 @@ alias work="cd ~/work"
 alias pe=pipenv
 alias poe=poetry
 alias pr="poetry run"
+alias ip=ipython
+alias y=yt-dlp
 alias vpython="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'" # ipython inside a virtualenv
 alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
