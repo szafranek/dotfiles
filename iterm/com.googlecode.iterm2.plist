@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AdjustWindowForFontSizeChange</key>
+	<false/>
 	<key>CloseBookmarksWindowAfterOpening</key>
 	<false/>
 	<key>CopyLastNewline</key>
@@ -1046,6 +1048,8 @@ Maximize Active Pane</string>
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
+			<key>Custom Icon Path</key>
+			<string>/Users/chris.szafranek/Documents/design/icons/classic 1984 macintosh.icns</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1071,6 +1075,8 @@ Maximize Active Pane</string>
 			<string>AA74F276-8A12-4F18-AC70-31F609829D57</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>2</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -2343,6 +2349,8 @@ Maximize Active Pane</string>
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<true/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2352,7 +2360,7 @@ Maximize Active Pane</string>
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -2372,18 +2380,24 @@ Maximize Active Pane</string>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.18015324519230769</real>
+	<key>StatusBarPosition</key>
+	<integer>0</integer>
 	<key>SwitchPaneModifier</key>
 	<integer>5</integer>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>4</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Snippets</string>
 		<string>Command History</string>
 		<string>Recent Directories</string>
 	</array>
+	<key>UseBorder</key>
+	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>UseModernScrollWheelAccumulator</key>
@@ -2394,6 +2408,10 @@ Maximize Active Pane</string>
 	<dict/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>disableMetalInLowPowerMode</key>
+	<false/>
+	<key>disableMetalWhenUnplugged</key>
+	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
