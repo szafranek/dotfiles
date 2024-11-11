@@ -30,6 +30,7 @@
 	d = diff
 	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	l = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M'"
+	ll = "!git --no-pager log --pretty=tformat:"%Cgreen%h%Creset%x09%ad%x09%Cblue%an%Creset%x09%s" -n30 --date=format:'%a %Y-%m-%d %H:%M' --stat"
 	p = pull
 	pf = push --force-with-lease
 	publish = "!git push -u origin $(git branch-name)"
