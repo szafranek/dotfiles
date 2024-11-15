@@ -1,4 +1,4 @@
+brew "colima"
+brew "docker"
 brew "graphviz"
-brew "podman"
 brew "pgcli"
-cask "dbeaver-community"

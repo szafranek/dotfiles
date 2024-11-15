@@ -40,3 +40,5 @@ cask "telegram"
 cask "the-unarchiver"
 cask "vlc"
 cask "whatsapp"
+cask "zed"
+
