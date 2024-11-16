@@ -3,3 +3,4 @@ Library/
 _archived/
 pkgs/
 venv/
+.DS_Store
