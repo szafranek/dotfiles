@@ -1,0 +1,5 @@
+[include]
+  path=~/work/dotfiles/.gitconfig
+[user]
+  name = Chris Szafranek
+  email = chris.szafranek@zalando.de
