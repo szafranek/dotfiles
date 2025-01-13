@@ -25,7 +25,6 @@
 	cam = commit -am
 	cm = commit -m
 	co = checkout
-	cob = checkout -b
 	cp = cherry-pick
 	d = diff
 	delete-merged-branches = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
@@ -36,7 +35,8 @@
 	publish = "!git push -u origin $(git branch-name)"
 	r = rebase
 	ri = rebase --interactive
-	s = status
+	s = switch
+	sc = switch --create
 	st = status
 	sync = "!git fetch origin master && git rebase origin/master"
 [core]
