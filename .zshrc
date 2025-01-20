@@ -4,6 +4,9 @@ then
 	SCRIPTS=$HOME/work/dotfiles/scripts
 fi
 
+# needed by VSCode terminal
+set -o emacs
+
 export PATH="$SCRIPTS/bin:$PATH"
 source $SCRIPTS/git-prompt.zsh
 source $SCRIPTS/zsh-syntax-highlighting.zsh
@@ -117,6 +120,8 @@ alias vpython="python -c 'import IPython; IPython.terminal.ipapp.launch_new_inst
 alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
+
+alias cur=cursor
 
 alias night="nightlight toggle"
 alias dns_flush="sudo killall -HUP mDNSResponder"
