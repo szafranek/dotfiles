@@ -1,5 +1,8 @@
+brew "astro"
+brew "awsli"
 brew "colima"
 brew "docker"
+brew "docker-compose"
 brew "graphviz"
 brew "pgcli"
 brew "poetry"
