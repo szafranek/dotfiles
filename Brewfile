@@ -26,6 +26,7 @@ brew "tokei"
 brew "tree"
 brew "uv"
 brew "watch"
+brew "viu"
 brew "yt-dlp"
 
 cask "apptrap"
