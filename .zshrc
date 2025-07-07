@@ -120,8 +120,6 @@ alias doco=docker-compose
 alias mysqlstart='/usr/local/bin/mysql.server start'
 alias mysqlstop='/usr/local/bin/mysql.server stop'
 
-alias cur=cursor
-
 alias night="nightlight toggle"
 alias dns_flush="sudo killall -HUP mDNSResponder"
 
