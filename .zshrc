@@ -77,6 +77,9 @@ setopt SHARE_HISTORY             # Share history between all sessions.
 setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 
+# Increase the default limit for file descriptors
+ulimit -n 4096
+
 # make bash `help` command work in zsh
 autoload run-help
 HELPDIR=/usr/share/zsh/"${ZSH_VERSION}"/help
