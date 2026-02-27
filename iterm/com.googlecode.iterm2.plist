@@ -986,7 +986,7 @@ Maximize Active Pane</string>
 				<real>0.79607844352722168</real>
 			</dict>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
