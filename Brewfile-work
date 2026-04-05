@@ -6,3 +6,5 @@ brew "docker-compose"
 brew "graphviz"
 brew "pgcli"
 brew "poetry"
+
+cask "jordanbaird-ice"
