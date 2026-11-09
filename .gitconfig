@@ -38,6 +38,7 @@
 	ri = rebase --interactive
 	s = switch
 	sc = switch --create
+	sd = switch --detach
 	st = status
 	sync = "!git fetch origin master && git rebase origin/master"
 	wt = worktree
